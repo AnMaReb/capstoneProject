@@ -1,0 +1,330 @@
+body {
+    min-width: fit-content;
+    /*padding: 3%;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p, 
+a,
+li,
+table, 
+figcaption {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, th {
+  font-variant: small-caps;
+}
+
+h1 {
+    font-size: 400%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 250%;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}    
+
+a:hover {
+    background-color: #82fc74;
+    transform: scale(1.2);
+}
+
+.active {
+    color: #96e5fb;
+    background-color: #0e00a4;
+    background: linear-gradient(#2252ff, #000522);
+    font-weight: bolder;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    background-color: #ff9e54;
+}
+
+nav a {
+    font-size: 200%;
+    font-weight: bolder;
+    margin: auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+  
+header h1 {
+    font-size: 500%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+header, 
+#page1 {
+    padding: 3%;
+}
+
+#page1 {
+    background-color: #999999;
+    background: linear-gradient(#67ff56, #ffffff);
+    display: flex;
+    flex-direction: column;
+}
+
+#page1 div:last-child {
+    align-self: center;
+    font-size: 150%;
+}
+
+#headshot img {
+    align-self: center;
+    width: 90%;
+}
+
+#to-top {
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 3%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3%;
+    padding: 2%;
+    background-color: #ff9e54;
+}
+
+footer a {
+    font-size: 200%;
+    font-weight: bolder;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    padding: 5%;
+    font-size: 130%;
+}
+
+footer i:first-of-type {
+    color: #0077b5;
+}
+
+footer i:last-of-type {
+    color: #1877F2;
+}
+
+/* ABOUT - SLIDESHOW CODE */
+
+* {box-sizing:border-box} 
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #000000;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slideImg {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: 90vh;
+    max-width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 1%;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/12 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #808080;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* end SLIDESHOW code */
+
+
+/* WORK INFO */
+
+li {
+    list-style-type: disc;
+}
+
+table {
+    min-width: 100%;
+    margin-bottom: 3%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+th {
+    background-color: #98e6fb;
+}
+
+th, td {
+    padding: 5px;
+}
+
+/* end WORK INFO */
+
+
+@media screen and (min-width:600px) {
+    nav a {
+        display: inline-block;
+        width: 32%;
+    }
+    footer a {
+        display: inline-block;
+        width: 49%;
+    }
+    header, 
+    #page1 {
+        padding: 3%;
+    }
+    #page1 {
+        background-color: #999999;
+        background-image: linear-gradient(to right, #002104, #ffffff);
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    #page1 div:last-child {
+        align-self: center;
+        font-size: 150%;
+    }
+    #headshot img {
+        align-self: center;
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (min-width:900px) {
+    .pg2wide {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 2%;
+        margin: 5%;
+    }
+    .pg2wide h2 {
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #c6c6c6;
+    }
+
+    #page1 {
+        background-image: linear-gradient( #67ff56, #c6c6c6);
+    }
+}
+
+@media screen and (min-width:600px) and (prefers-color-scheme: dark) {
+    #page1 {
+        background-color: #999999;
+        background-image: linear-gradient(to right, #67ff56, #c6c6c6);
+    }
+}
