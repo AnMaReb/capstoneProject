@@ -28,12 +28,22 @@ h1 {
 }
 
 h2 {
-    font-size: 250%;
+    font-size: 300%;
     font-style: italic;
 }
 
 h3 {
-    font-size: 100%;
+    font-size: 200%;
+}
+
+th {
+    font-size: 175%;
+}
+
+p, 
+li, 
+td {
+    font-size: 125%;
 }
 
 a {
